@@ -13,7 +13,6 @@ function SignUpForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Sign up the user with email and password
       const { user, error } = await supabase.auth.signUp({
         email,
         password,

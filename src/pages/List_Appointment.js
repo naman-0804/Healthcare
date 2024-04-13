@@ -7,7 +7,6 @@ function ListAppointments() {
   useEffect(() => {
     const fetchAppointments = async () => {
       try {
-        // Fetch appointments data from the appointments table
         const { data, error } = await supabase.from('appointement').select('*');
         if (data) {
           setAppointments(data);
@@ -31,7 +30,7 @@ function ListAppointments() {
           <li key={appointment.id}>
             <p>Date: {appointment.date}</p>
             <p>Department: {appointment.dept}</p>
-            {/* Add more details here as needed */}
+            {/*  */}
           </li>
         ))}
       </ul>

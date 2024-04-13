@@ -11,13 +11,11 @@ function Navigation() {
   return (
     <nav>
       <ul>
-        {/* Render the Sign Up link only if the current route is the root page */}
         {location.pathname === "/" && (
           <li>
             <Link to="/signup">Sign Up</Link>
           </li>
         )}
-        {/* Render the Sign In link only if the current route is the root page */}
         {location.pathname === "/" && (
           <li>
             <Link to="/signin">Sign In</Link>

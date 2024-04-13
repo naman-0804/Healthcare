@@ -10,7 +10,6 @@ function SignInForm() {
   const handleSignIn = async (e) => {
     e.preventDefault();
     try {
-      // Check if the email and password match a doctor record
       const { data: doctors, error: doctorError } = await supabase
         .from('doctor')
         .select('*')
@@ -20,12 +19,12 @@ function SignInForm() {
 
       if (doctors) {
         alert('Doctor sign in successful!');
-        // Navigate to DoctorDashboard
-        navigate('/DoctorDashboard'); // Redirect to DoctorDashboard
+  
+        navigate('/DoctorDashboard'); 
         return;
       }
 
-      // Check if the email and password match a patient record
+  
       const { data: patients, error: patientError } = await supabase
         .from('patient')
         .select('*')
@@ -35,12 +34,10 @@ function SignInForm() {
 
       if (patients) {
         alert('Patient sign in successful!');
-        // Navigate to PatientDashboard
         navigate('/PatientDashboard');
         return;
       }
 
-      // If neither doctor nor patient found, display error
       throw new Error('User not found or invalid credentials.');
 
     } catch (error) {

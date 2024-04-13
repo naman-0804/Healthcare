@@ -9,7 +9,6 @@ function AppointmentScheduling() {
   const handleAppointmentSchedule = async (e) => {
     e.preventDefault();
     try {
-      // Insert appointment data into the appointments table
       const { error } = await supabase.from('appointement').insert([
         { pat_id: pat_id, date: date, dept: dept }
       ]);
