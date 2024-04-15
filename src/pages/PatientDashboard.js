@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ListAppointments from './List_Appointment'; 
+import PrescriptionList from './List_prescription';
 
 function PatientDashboard() {
   return (
@@ -10,10 +11,10 @@ function PatientDashboard() {
       <br></br>
       <a href="http://127.0.0.1:5000/video_feed">Video Call for mute</a>
       <br></br>
-      
-      <ListAppointments /> {/* */}
+      <ListAppointments /> 
+      <br></br>
+      <PrescriptionList />
     </div>
   );
 }
-
 export default PatientDashboard;
