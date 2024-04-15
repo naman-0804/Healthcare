@@ -5,6 +5,7 @@ import SignInForm from './pages/signinform';
 import DoctorDashboard from './pages/DoctorDashboard';
 import PatientDashboard from './pages/PatientDashboard';
 import AppointmentScheduling from './pages/Appointement';
+import Prescription from './pages/Prescription';
 function Navigation() {
   const location = useLocation();
 
@@ -37,6 +38,7 @@ function App() {
           <Route path="/DoctorDashboard" element={<DoctorDashboard />} />
           <Route path="/PatientDashboard" element={<PatientDashboard />} />
           <Route path="/AppointmentScheduling" element={<AppointmentScheduling />} />
+          <Route path="/Prescription" element={<Prescription />} />
         </Routes>
       </div>
     </Router>
