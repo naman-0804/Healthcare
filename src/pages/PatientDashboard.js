@@ -7,6 +7,10 @@ function PatientDashboard() {
     <div>
       <h2>Patient Dashboard</h2>
       <Link to="/AppointmentScheduling">Schedule Appointment</Link>
+      <br></br>
+      <a href="http://127.0.0.1:5000/video_feed">Video Call for mute</a>
+      <br></br>
+      
       <ListAppointments /> {/* */}
     </div>
   );
