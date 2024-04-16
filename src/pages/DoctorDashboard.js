@@ -12,7 +12,7 @@ function DoctorDashboard() {
       </header>
       <div className="containerDoc">
       <div className="dashboardDoc">
-      <div class="card">
+      <div class="card-prec">
         <h2>Prescriptions</h2>
         <p>View and manage your patient prescriptions.</p>
         <div class="add-prescription">

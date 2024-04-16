@@ -4,8 +4,7 @@ import ListAppointments from './List_Appointment';
 import './patientdashboard.css';
 import supabase from '../config/supabaseClient';
 import { useState, useEffect } from 'react';
-import Listprescription from './List_prescription';
- 
+import Listprescription from './List_prescription'; 
 
 function PatientDashboard() {
   const [appointments, setAppointments] = useState([]);
@@ -51,23 +50,27 @@ function PatientDashboard() {
     <div className="dashboardPat">
     <div class="card-pat">
         <h2>Appointments</h2>
-        <div>Schedule an Appointment.</div>
+        <div className="preetitle">Scheduling an Appointment with a Doctor is just one CLICK AWAY</div>
         <div class="add-appoint">
         <Link to="/AppointmentScheduling">Schedule Appointment</Link><div class="appoint-ani"></div>
-        <Listprescription/>
-
-      {}
+      
       </div>
     </div>
 
     <div class="card-pat">
-        <h2>Patients</h2>
-        <p>View and manage your patient records.</p>
-        <a href="http://127.0.0.1:5000/video_feed">Video Call for mute</a>
+    <Listprescription/>
     </div>
+    <div class="card-pat">
+        <h2>Consultation</h2>
+        <div className="preetitle">Talk to your Doctor NOW</div>  
+        <br />
+        <div class="add-vid">
+        <a href="http://127.0.0.1:5000/video_feed">Virtual Consultation (Sign Language)</a>
+        <div class="vid-ani"></div>
+        </div> 
     </div>
-      
-     
+    
+    </div>
     </div>
   );
 }

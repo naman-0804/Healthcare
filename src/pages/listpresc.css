@@ -1,0 +1,14 @@
+.pree input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    align-content: center;
+  }
+  .preetitle
+  {
+    font-size: large;
+    font-weight: 400;
+  }

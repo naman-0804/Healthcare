@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import supabase from '../config/supabaseClient';
+import './listpresc.css';
 
 const Listprescription = () => {
     const [pat_id, setPatId] = useState('');
@@ -37,7 +38,8 @@ const Listprescription = () => {
     return (
         <div>
             <h2>Prescription List</h2>
-            <label htmlFor="pat_id">Enter Patient ID:</label>
+            <div className="pree">
+            <label htmlFor="pat_id"><div className="preetitle">Enter Patient ID:</div></label>
             <input 
                 type="text" 
                 id="pat_id" 
@@ -45,6 +47,7 @@ const Listprescription = () => {
                 value={pat_id} 
                 onChange={handleInputChange} 
             />
+            </div>
             <ul>
                 {prescriptions.map(prescription => (
                     <li key={prescription.pre_id}>

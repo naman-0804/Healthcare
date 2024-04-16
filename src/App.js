@@ -8,14 +8,21 @@ import AppointmentScheduling from './pages/Appointement';
 import Prescription from './pages/Prescription';
 import Listprescription from './pages/List_prescription';
 import './App.css';
+import Chatbot from './chatbot';
 
 function Navigation() {
   const location = useLocation();
 
   return (
     <div className="Home">
-      <div className="header"><h1>MedHub360</h1><div className="logo-home"></div></div>
-      
+      <div className="header">
+        <h1 className="abc">MedHub360</h1>
+        <div className="logo-home"></div></div>
+
+        <div className='card-pat1'>
+          <p className="tet1">ChatBot 24*7</p>
+          <Chatbot />
+        </div>
     <nav >
         {location.pathname === "/" && (
             <Link to="/signup"><div className="link1">Sign Up</div></Link>
