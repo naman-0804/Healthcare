@@ -35,6 +35,11 @@ function DoctorDashboard() {
         <ListAppointments/>
       </div>
       </div>
+      <div class="card">
+        <h2>Video call</h2>
+        <p>Talk with your patient</p>
+        <a href="http://127.0.0.1:5000/video_feed">Video Call for mute</a>
+      </div>
       </div>
       </div>
     </div>
