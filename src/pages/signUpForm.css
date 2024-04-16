@@ -1,0 +1,189 @@
+.signUP{
+  font-family: Arial, sans-serif;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #b8d8f8;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+.form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  height:400px;
+}
+.form h1 {
+  text-align: center;
+  
+}
+.form input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  align-content: center;
+}
+.btn-sch {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  margin-left: 100px;
+  padding: 10px 20px;
+  background-color: #32e656;
+  color: rgb(16, 22, 80);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-sch::before,
+.btn-sch::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.btn-sch::before {
+  background-color: #47bbe4;
+  height: 5px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.btn-sch::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+  color: #030c10;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-sch:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+
+.btn-sch:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+.btn-sch span {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.btn:hover span {
+  transform: translate3d(-200%, 0, 0);
+}
+.form button {
+  width: 100%;
+  background-color: #050f32;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #4b9e32;
+}
+
+.labels{
+  font-size: larger; 
+  color:#050f32;
+}
+.form select {
+  width: 50%;
+  padding: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #331796;
+  border-radius: 4px;
+  font-size: 16px;
+  
+}
+.btn {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  margin-left: 3px;
+  padding: 10px 20px;
+  background-color: #32e656;
+  color: rgb(16, 22, 80);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn::before,
+.btn::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.btn::before {
+  background-color: #47bbe4;
+  height: 5px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.btn::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+  color: #030c10;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+
+.btn:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+.btn span {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.btn:hover span {
+  transform: translate3d(-200%, 0, 0);
+}

@@ -6,24 +6,25 @@ import DoctorDashboard from './pages/DoctorDashboard';
 import PatientDashboard from './pages/PatientDashboard';
 import AppointmentScheduling from './pages/Appointement';
 import Prescription from './pages/Prescription';
+import Listprescription from './pages/List_prescription';
+import './App.css';
+
 function Navigation() {
   const location = useLocation();
 
   return (
-    <nav>
-      <ul>
+    <div className="Home">
+      <div className="header"><h1>MedHub360</h1><div className="logo-home"></div></div>
+      
+    <nav >
         {location.pathname === "/" && (
-          <li>
-            <Link to="/signup">Sign Up</Link>
-          </li>
+            <Link to="/signup"><div className="link1">Sign Up</div></Link>
         )}
         {location.pathname === "/" && (
-          <li>
-            <Link to="/signin">Sign In</Link>
-          </li>
+            <Link to="/signin"><div className="link2">Log In</div></Link>
         )}
-      </ul>
-    </nav>
+    </nav>  
+    </div>      
   );
 }
 
@@ -39,6 +40,7 @@ function App() {
           <Route path="/PatientDashboard" element={<PatientDashboard />} />
           <Route path="/AppointmentScheduling" element={<AppointmentScheduling />} />
           <Route path="/Prescription" element={<Prescription />} />
+          <Route path="/Listprescription" element={<Listprescription/>} />
         </Routes>
       </div>
     </Router>

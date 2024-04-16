@@ -1,0 +1,78 @@
+.pre{
+    font-family: Arial, sans-serif;
+    background-color: #b8d8f8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+  
+.container-pres {
+    width: 600px;
+    margin: 50px auto;
+    margin-top: 80px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    height:480px;
+  }
+  
+h1.prestitle {
+    text-align: center;
+    color: #333;
+  }
+  
+.form-group {
+    display: block;
+    font-weight: bold;
+    color: #0d1029;
+    margin-bottom: 5px;
+    margin-left: 45px;
+    font-size: larger;
+  }
+  
+.pres-text input {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #cec4c4;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-left: 45px;
+  }
+  
+  .btn-upl-pres {
+    display: block;
+    width: 60%;
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+    margin-left: 120px;
+  }
+  .btn-upl-pres:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transition: width 0.3s ease, height 0.3s ease;
+  }
+  .btn-upl-pres:hover {
+    background-color: #45a049;
+  }
+  .btn-upl-pres:hover:before {
+    width: 200px;
+    height: 200px;
+  }

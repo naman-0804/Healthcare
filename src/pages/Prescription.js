@@ -1,7 +1,7 @@
 // Prescription.js
 import React, { useState } from 'react';
 import supabase from '../config/supabaseClient';
-
+import './pres.css';
 function Prescription() {
   const [prescriptionData, setPrescriptionData] = useState({
     pat_id: '',
@@ -45,19 +45,25 @@ function Prescription() {
   };
 
   return (
-    <div>
-      <h2>Add Prescription</h2>
-      <form onSubmit={handlePrescriptionSubmit}>
-        <label htmlFor="pat_id">Patient ID:</label><br />
+    <div className="pre">
+      <div className="container-pres">
+      <h1 className="prestitle">Add Prescription</h1>
+      <form className="pres-text" onSubmit={handlePrescriptionSubmit}>
+        <label className="form-group" htmlFor="pat_id">Patient ID:</label>
         <input type="text" id="pat_id" name="pat_id" value={prescriptionData.pat_id} onChange={handleChange} required /><br />
-        <label htmlFor="doc_id">Doctor ID:</label><br />
+        <br />
+        <label className="form-group" htmlFor="doc_id">Doctor ID:</label>
         <input type="text" id="doc_id" name="doc_id" value={prescriptionData.doc_id} onChange={handleChange} required /><br />
-        <label htmlFor="medicine">Medicine:</label><br />
+        <br />
+        <label className="form-group" htmlFor="medicine">Medicine:</label>
         <input type="text" id="Medicine" name="Medicine" value={prescriptionData.Medicine} onChange={handleChange} required /><br />
-        <label htmlFor="consumption">Consumption:</label><br />
+        <br />
+        <label className="form-group" htmlFor="consumption">Consumption:</label>
         <input type="text" id="Consumption" name="Consumption" value={prescriptionData.Consumption} onChange={handleChange} required /><br />
-        <button type="submit">Submit Prescription</button>
+        <br />
+        <button className="btn-upl-pres" type="submit">Upload Prescription</button>
       </form>
+      </div>
     </div>
   );
 }

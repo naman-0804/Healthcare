@@ -1,0 +1,57 @@
+.appoint
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccf0f9;;
+}
+.container2 {
+    width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  }
+
+  h1.appointtitle {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .appoint-form {
+    margin-bottom: 20px;
+  }
+    
+  .appoint-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 70px;
+  }
+  
+  .appoint-form input {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display:block;
+    margin:0 auto;
+  }
+ 
+  .btn-sch {
+    width: 90%;
+    background-color: #050f32;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 20px;
+  }
+
+.btn-sch:hover {
+    background-color: #4b9e32;
+  }
