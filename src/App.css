@@ -4,7 +4,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url('pages\\home.jpg'); 
+  background-image: url('pages//home.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -16,7 +16,7 @@
   display: inline-block;
   width: 50px; 
   height: 50px; 
-  background-image: url('pages\\hospital.png');
+  background-image: url('pages//hospital.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
