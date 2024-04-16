@@ -25,7 +25,6 @@ function Patient() {
 
   return (
     <div>
-      <h2>Patients</h2>
       {loading ? (
         <p>Loading...</p>
       ) : (

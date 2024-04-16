@@ -67,7 +67,7 @@ function PatientDashboard() {
     </div>
     </div>
       
-      <ListAppointments appointments={appointments} setAppointments={setAppointments} /> {/* */}
+     
     </div>
   );
 }

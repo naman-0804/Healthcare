@@ -24,7 +24,16 @@ function ListAppointments() {
 
   return (
     <div>
-      
+      <h2>Appointments</h2>
+      <ul>
+        {appointments.map(appointment => (
+          <li key={appointment.id}>
+            <p>Date: {appointment.date}</p>
+            <p>Patient Id: {appointment.pat_id}</p>
+            {/* Add more details as needed */}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
