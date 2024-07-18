@@ -1,1 +1,1 @@
-A healthcare site focussed majorly on mute peoples
+A healthcare site focused majorly on mute people
